@@ -87,11 +87,7 @@ class Point(object):
         return distance_from
 
     def get_distance_from_start(self):
-        import math
-        dx = abs(self.x - self.absolute_start_x)
-        dy = abs(self.y - self.absolute_start_y)
-        distance_from_start = math.sqrt(dx ** 2 + dy ** 2)
-        return distance_from_start
+        return self.get_distance_from(Point(self.absolute_start_x, self.absolute_start_y))
 
     def get_distance_traveled(self):
         return self.distance_traveled
