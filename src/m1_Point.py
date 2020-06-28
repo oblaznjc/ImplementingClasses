@@ -39,6 +39,7 @@ def main():
 #   Run the program and correct any syntax (notational) errors.
 # ----------------------------------------------------------------------
 
+
 class Point(object):
     """ Point object in 2 space with arguments x and y"""
     def __init__(self, x, y):
